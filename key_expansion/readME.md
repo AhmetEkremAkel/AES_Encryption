@@ -2,3 +2,4 @@
 4k LUT 3K FF yer kaplıyor
 Bir keyi 2 cycle da, 10 keyi toplam yaklaşık 25 cycle da hesaplıyor.
 Algoritma :
+![Uploading Ekran görüntüsü 2025-03-17 234539.png…]()
