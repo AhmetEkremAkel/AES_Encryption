@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+//branch deneme
 module AES_Core (
     input  wire         clk,
     input  wire         reset,
