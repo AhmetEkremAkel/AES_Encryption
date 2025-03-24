@@ -5,6 +5,7 @@ module key_expansion(
     input  wire         reset,
     input  wire         start,          // 1 -> Key Expansion start
     input  wire [127:0] initial_key,    // 128 bit initial key
+    
     input  wire [3:0]   desired_round,  // requested keys round
     output reg  [127:0] expanded_key,   // requested key
     output reg          done            // 1 -> key expanding is complete
@@ -79,7 +80,7 @@ always @(posedge clk or posedge reset) begin
                 state <= IDLE;
         end
         // ---------------------------
-        // LOAD: Start key (round 0) w[0..3] olarak yükle
+        // LOAD: Start key (round 0) w[0..3]
         // ---------------------------
         LOAD: begin
             // big-endian: k0 = [127:96], k1 = [95:64], ...
@@ -90,31 +91,31 @@ always @(posedge clk or posedge reset) begin
             
             // Round 0 key -> round_keys[0]
             round_keys[0] <= initial_key;
-            round <= 4'd1; // ilk hesaplayacağımız round = 1
+            round <= 4'd1; // first round to calculate = 1
             state <= CALC;
         end
         // ---------------------------
-        // CALC: RotWord ve S-Box girişlerini ayarla
+        // CALC: RotWord and S-Box
         // ---------------------------
         CALC: begin
             
-            temp = w[4*(round-1)+3];   // Son kelime
-            // RotWord: byte kaydırma
+            temp = w[4*(round-1)+3];   // last word
+            // RotWord: byte kaydÄ±rma
             temp = {temp[23:0], temp[31:24]};
-            // S-Box girişlerini ayarla
+            // S-Box giriÅŸlerini ayarla
             sbox_in0 <= temp[31:24];
             sbox_in1 <= temp[23:16];
             sbox_in2 <= temp[15:8];
             sbox_in3 <= temp[7:0];
-            state <= WAIT_SBOX;  // S-Box çıktılarının hazır olmasını bekle
+            state <= WAIT_SBOX;  // wair for s box outputs
         end
         // ---------------------------
-        // WAIT_SBOX: S-Box çıkışlarını al, SubWord ve w hesaplamalarını yap
+        // WAIT_SBOX: S-box outputs 
         // ---------------------------
         WAIT_SBOX: begin
             
             subword = {
-                sbox_out0 ^ RCON[round],  // İlk byte'da RCON XOR
+                sbox_out0 ^ RCON[round],  // First byte RCON XOR
                 sbox_out1,
                 sbox_out2,
                 sbox_out3
@@ -123,7 +124,7 @@ always @(posedge clk or posedge reset) begin
             w[4*round + 1] = w[4*round]         ^ w[4*(round-1)+1];
             w[4*round + 2] = w[4*round + 1]     ^ w[4*(round-1)+2];
             w[4*round + 3] = w[4*round + 2]     ^ w[4*(round-1)+3];
-            // 128 bit round key oluştur ve sakla
+            //generate and  128 bit round key
             round_keys[round] = {
                 w[4*round],
                 w[4*round + 1],
@@ -131,24 +132,21 @@ always @(posedge clk or posedge reset) begin
                 w[4*round + 3]
             };
             if (round == 10)
-                state <= DONE_STATE; // Tüm round'lar hesaplandı
+                state <= DONE_STATE;
             else begin
                 round <= round + 1;
                 state <= CALC;
             end
         end
         // ---------------------------
-        // DONE_STATE: Tüm anahtarlar hesaplandı
+        // DONE_STATE: all keys are calculated and ready
         // ---------------------------
         DONE_STATE: begin
             done <= 1'b1;
-            // İstenen round key, desired_round girişine göre çıkışa aktarılır
+            // intended round key goes to output
             expanded_key <= round_keys[desired_round];
-            // Yeni key expansion istenirse start kontrolü
-            if (start)
-                state <= LOAD;
-            else
-                state <= DONE_STATE;
+            // Yeni key expansion istenirse start kontrolÃ¼
+
         end
         endcase
     end
