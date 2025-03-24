@@ -2,9 +2,6 @@
 
 module aes_core_tb;
 
-    // ----------------------------------------
-    // Test Bench Sinyalleri
-    // ----------------------------------------
     reg         clk;
     reg         reset;
     reg         start;
@@ -14,11 +11,6 @@ module aes_core_tb;
     wire [127:0] data_out;  // Ciphertext
     wire        done;
 
-    // ----------------------------------------
-    // DUT (Device Under Test) Instantiation
-    // Burada aes_core, AES_Top, AES_Enc_Top vb. sizin modül adınız olabilir.
-    // Portları kendi tasarımınıza göre eşleştirin.
-    // ----------------------------------------
     AES_Core dut(
         .clk       (clk),
         .reset       (reset),
@@ -32,40 +24,31 @@ module aes_core_tb;
     );
 
 
-    // ----------------------------------------
-    // Clock Oluşturma (100 MHz => 10 ns period)
-    // ----------------------------------------
     initial begin
         clk = 0;
         forever #5 clk = ~clk; // 10 ns period
     end
 
-    // ----------------------------------------
-    // Test Senaryosu
-    // ----------------------------------------
     initial begin
-        // Başlangıç durumları
         reset      = 1'b1;
         start    = 1'b0;
         data_in  = 128'h0;
         key_in   = 128'h0;
 
-        // Birkaç clock reset aktif tutalım
         #20;
         reset      = 1'b0;
 
-        // Bir clock döngüsü bekleyelim
+        // Bir clock 
         #10;
 
-        // Test edilecek plaintext ve key atayalım
+        // Test edilecek plaintext ve key atayalÄ±m
         data_in  = 128'h00112233445566778899AABBCCDDEEFF;
         key_in   = 128'h000102030405060708090A0B0C0D0E0F;
 
         // start sinyalini tetikleyelim
         start    = 1'b1;
         #10;
-        start    = 1'b0;  // Tek clock "start"ı aktif
-        #10
+        start    = 1'b0;  // Tek clock "start"Ä± aktif
         key_expansion_done = 1'b1;
         #16
         key_in   = 128'hd6aa74fdd2af72fadaa678f1d6ab76fe;
@@ -88,20 +71,14 @@ module aes_core_tb;
         #10
         key_in   = 128'h13111d7fe3944a17f307a78b4d2b30c5;
         #10
-        // AES çekirdeğiniz "done" = 1 olduğunda iş bitmiş olacak.
-        // done'in 1 olmasını bekleyelim (örn. 2000 ns max)
         wait (done == 1'b1);
-        #10; // done olduktan sonra bir kaç ns bekle
+        #10; // done olduktan sonra bir kaÃ§ ns bekle
 
-        // Artık data_out içinde Ciphertext bekliyoruz
         $display("Time=%t, Ciphertext = %h", $time, data_out);
 
-        // Eğer doğruluk kontrolü yapmak isterseniz (örnek değere göre):
-        // Beklenen: 0x69C4E0D86A7B0430D8CDB78070B4C55A
 
         $stop;
-        // Simülasyon sonlandır
+
     end
 
 endmodule
-
