@@ -79,7 +79,6 @@ always @(posedge clk or posedge reset) begin
             IDLE: begin
                 // start = 1 ise encryptionâ€™a baÅŸla
                 if (start) begin
-                    state_reg  <= data_in;   // plaintextâ€™i state_regâ€™e al
                     round_cnt  <= 4'd0;
                     state      <= WAIT_KEY_EXPANSION;
                     
@@ -87,6 +86,7 @@ always @(posedge clk or posedge reset) begin
             end
 
             WAIT_KEY_EXPANSION: begin
+                state_reg  <= data_in;
                 if (key_expansion_done) begin
                     round_cnt  <= round_cnt + 1;
                     if(round_cnt == 1)begin
@@ -126,3 +126,4 @@ always @(posedge clk or posedge reset) begin
     end
 end
 endmodule
+
