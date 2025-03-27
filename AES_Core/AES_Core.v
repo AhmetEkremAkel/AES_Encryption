@@ -4,12 +4,12 @@ module AES_Core (
     input  wire         clk,
     input  wire         reset,
 
-    input  wire         start,        // encrypt etmeye basla
+    input  wire         start,        // encrypt start
     input  wire [127:0] data_in,      // 128-bit plaintext
 
     input  wire         key_expansion_done,  // key expansion bitti sinyali
-    output reg  [3:0]   desired_round, // istenilen round anahtarÄ± numarasÄ±
-    input  wire [127:0] key_in,        // 128-bit AES anahtarÄ±
+    output reg  [3:0]   desired_round, // istenilen round anahtarını alacagız
+    input  wire [127:0] key_in,        // 128-bit AES anahtarı
 
     output wire  [127:0] data_out,      // 128-bit ciphertext
     output reg          done           // encryption bitti
@@ -28,11 +28,11 @@ localparam DONE_STATE          = 3'd4;
 reg [2:0]   state;         
 reg [3:0]   round_cnt;     
 reg [127:0] state_reg;     
-reg [127:0] last_state_reg; // Final tur verisini tutmak iÃ§in register
+    reg [127:0] last_state_reg; // Final tur verisini tutmak icin reg
 reg [127:0] data_out_reg;
 
 // ------------------------------------------
-// Alt ModÃ¼l Sinyalleri
+// Alt Modul Sinyalleri
 // ------------------------------------------
 wire [127:0] sb_out;      // SubBytes
 wire [127:0] sr_out;      // ShiftRows
@@ -43,7 +43,7 @@ wire [127:0] sr_out_2;    // ShiftRows
 wire [127:0] last_ark_out;
 
 // ------------------------------------------
-// Alt ModÃ¼ller (instantiation)
+// Alt Moduller (instantiation)
 // ------------------------------------------
 // Normal tur:
 subbytes   u_subbytes   (.state_in(state_reg), .state_out(sb_out));
@@ -77,7 +77,7 @@ always @(posedge clk or posedge reset) begin
         
         case (state)
             IDLE: begin
-                // start = 1 ise encryptionâ€™a baÅŸla
+                // start = 1 ise encryption
                 if (start) begin
                     round_cnt  <= 4'd0;
                     state      <= WAIT_KEY_EXPANSION;
@@ -96,7 +96,7 @@ always @(posedge clk or posedge reset) begin
             end
 
             INIT_ADDKEY: begin
-                // round_cnt=0 => ilk turun anahtarÄ± key_in
+                // round_cnt=0 => ilk turun anahtarı key
                 state_reg  <= state_reg ^ key_in;  // plaintext XOR anahtar
                 round_cnt  <= round_cnt + 1;       
                 state      <= ROUND;
