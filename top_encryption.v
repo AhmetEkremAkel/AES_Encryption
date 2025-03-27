@@ -8,7 +8,7 @@ module top_encryption(
     input  wire         start,        // encrypt etmeye basla
     input  wire [127:0] data_in,      // 128-bit plaintext
     input  wire [127:0] key_in,        // 128-bit AES anahtarÄ±
-    input  wire [127:0] nonce,         //nonce sayÄ±sÄ± (gÃ¼venlik iÃ§in hiÃ§bir zaman aynÄ± nonce yi tekrar kullanmayÄ±n ! )
+    input  wire [127:0] nonce,         //nonce sayısı (güvenlik için her kullanımda degistirilmelidir)
     
     output wire  [127:0] data_out,      // 128-bit ciphertext
     output wire          done           // encryption bitti
