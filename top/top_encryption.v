@@ -2,18 +2,17 @@
 
 
 module top_encryption(
-    input  wire         clk,
-    input  wire         reset,
-
-    input  wire         start,        // encrypt etmeye basla
-    input  wire [127:0] data_in,      // 128-bit plaintext
-    input  wire [127:0] key_in,        // 128-bit AES anahtarÄ±
-    input  wire [127:0] nonce,         //nonce sayısı (güvenlik için her kullanımda degistirilmelidir)
-    
-    output wire  [127:0] data_out,      // 128-bit ciphertext
+ input  wire         clk,
+ input         reset,
+ input         start,        // encrypt etmeye basla
+ input [127:0]data_in,      // 128-bit plaintext
+ input [127:0]key_in,        // 128-bit AES anahtarÄ±
+ input [127:0]nonce, 
+    output reg  [127:0] data_out,      // 128-bit ciphertext
     output wire          done           // encryption bitti
     );
-
+        //nonce sayÄ±sÄ± (gÃ¼venlik iÃ§in hiÃ§bir zaman aynÄ± nonce yi tekrar kullanmayÄ±n ! )
+    
 localparam IDLE                = 3'd0;
 localparam RUN                 = 3'd1;
 
@@ -58,19 +57,21 @@ always @(posedge clk or posedge reset) begin
                 if(start)begin
                     state <= RUN;
                     nonce_reg <= nonce;
+                    data_out <= 0;
                 end
             end
 
             RUN:begin
                 if(done)begin
                     nonce_reg = nonce_reg + 1;
+                    data_out = encrypt_out ^ data_in;
+                    
                 end
             end
         endcase
     end
 end
 
-assign data_out = encrypt_out ^ data_in;
 
 
 endmodule
