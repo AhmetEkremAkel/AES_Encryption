@@ -7,3 +7,6 @@ Bu modulde direkt olarak encryptin outputunu decrypte bagladım.
 Decryptin veriyi biraz geç alması için start bitini start_2 yaptım ve 10 cycle sonra başlattım.
 
 ![image](https://github.com/user-attachments/assets/a9ea7f25-0a93-4055-b6e5-1693bacb5498)
+
+Chiper text online toollardaki ile aynı çıktı.
+Decryption verisi Plain text ile aynı çıkaran Encryption ve Decrypiton modüllerinin doğru çalıştığı kanıtlanmış oldu.
