@@ -18,6 +18,13 @@ AES CTR mode :
 
 ![image](https://github.com/user-attachments/assets/99d2f7f6-4bed-48cc-8218-faa92ef41a99)
 
+## Top module test bench results with Encryption and Decryption on same module:
+
+![image](https://github.com/user-attachments/assets/36fc52d9-176e-4010-aa81-619fe31048fb)
+
+
 Explanation about the top module:
 
 After the done signal arrives, whatever is in the data in the rising edge of the clk signal is regulated. After that, even if the data in changes, the data out after the process will be the regulated data.
+
+
