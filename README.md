@@ -1,6 +1,7 @@
 # FPGA Üzerinde Test yapmak için :
 
 1 - top_AES_CTR ve tüm alt modullerini ve uart modullerini aynı projede açın.
+
 2 - top_FPGA_test modulunu de kurun ve top modul seçin.
 
 # AES CTR
