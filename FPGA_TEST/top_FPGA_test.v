@@ -1,5 +1,8 @@
 `timescale 1ns / 1ps
-module top_test_module_verilog (
+module top_test_module_verilog #(
+    parameter IMAGE_WIDTH = 256,
+              IMAGE_LENGHT = 256
+)(
     input  wire        clk,
     input  wire        reset,      // active‑high asynchronous reset
     input              rx,
@@ -50,28 +53,30 @@ module top_test_module_verilog (
         .tx_done_tick_o (uart_tx_done)
     );
 
+    integer BYTE_NUMBER = IMAGE_WIDTH * IMAGE_LENGHT;
+    integer BLOCK_NUMBER = IMAGE_WIDTH * IMAGE_LENGHT / 16;
 
-    reg [7:0] img_mem [31:0]; //65535
-    reg [127:0]cipher_text[1:0]; //4096
-    reg [127:0]plain_text[1:0]; //4096 
+    reg [7:0] img_mem [IMAGE_WIDTH * IMAGE_LENGHT -1:0]; //65535
+    reg [127:0]cipher_text[(IMAGE_WIDTH * IMAGE_LENGHT / 16)-1:0]; //4096
+    reg [127:0]plain_text[(IMAGE_WIDTH * IMAGE_LENGHT / 16)-1:0]; //4096 
 
-    integer index;          // 0 … 65 535
-    integer index_2;        //0.. 15
+    integer index;
+    integer index_2;
     integer initial_start;
 
-    reg [2:0]  state;
     reg done = 0;
     reg start_encryption = 0;
     reg start_decryption = 0;
     reg [127:0]data_in = 0;
     reg uart_tx_start = 0;
     reg [7:0]uart_tx_data;
-    
+
     wire [7:0]uart_rx_data;
     wire [127:0]connection;
-    reg [127:0]connection_2;
+    reg [127:0]connection_2 = 0;
     wire [127:0]data_out_reg;
 
+    reg [2:0]state;
     localparam S_IDLE = 3'd0,
                S_RX_DONE = 3'd1,
                S_TX_START = 3'd2,
@@ -88,17 +93,22 @@ module top_test_module_verilog (
             state      <= S_IDLE;
             index      <= 0;
             done       <= 1'b0;
+            start_decryption <= 0;
+            start_encryption <= 0;
+            data_in <= 0;
+            uart_tx_start <= 0;
+
         end
         else begin
             case (state)
             // ---------------------------------------------------- IDLE -------
             S_IDLE: begin
                 done <= 0;
-                if (uart_rx_done && index <= 31) begin               //buradaki deger img_mem degeri olacak
+                if (uart_rx_done && index <= BYTE_NUMBER - 1) begin
                     img_mem[index] <= uart_rx_data[7:0];
                     index <= index + 1;
                 end
-                else if (index == 32) begin    //buradaki deger img_mem degeri olacak
+                else if (index == BYTE_NUMBER) begin
                         state <= S_RX_DONE;
                         index   <= 0;
                         start_encryption <= 1;
@@ -119,7 +129,7 @@ module top_test_module_verilog (
                   if (done_encryption) begin
                       cipher_text[index] = connection[127:0];
                       index = index + 1;
-                      if (index == 2) begin //buradaki deger cipher_textin degeri olacak
+                      if (index == BLOCK_NUMBER) begin
                           index = 0;
                           index_2 = 0;
                           initial_start = 1;
@@ -136,11 +146,11 @@ module top_test_module_verilog (
                 index_2 = index_2 + 1;
                 initial_start <= 0;
                 end
-                else if (index_2 == 16 && index < 1) begin //buradaki deger cipher_textin degeri olacak
+                else if (index_2 == 16 && index < BLOCK_NUMBER - 1) begin
                     index = index + 1;
                     index_2 = 0;
                 end
-                else if (index_2 == 16 && index == 1) begin //buradaki deger cipher_textin degeri olacak
+                else if (index_2 == 16 && index == BLOCK_NUMBER - 1) begin
                     state <= S_TX_DONE;
                     index <=  0;
                     index_2 <= 0;
@@ -149,11 +159,11 @@ module top_test_module_verilog (
             end
             S_TX_DONE : begin   //BU STATEDE DECRYPTION YAPILIYOR
                 connection_2 <= cipher_text[index];
-                if (done_decryption == 1 && index < 1) begin //buradaki deger plain_textin degeri olacak
+                if (done_decryption == 1 && index < BLOCK_NUMBER - 1 ) begin
                     plain_text[index] <= data_out_reg[127:0];
                     index = index + 1;
                 end
-                else if (done_decryption == 1 && index == 1) begin //buradaki deger plain_textin degeri olacak
+                else if (done_decryption == 1 && index == BLOCK_NUMBER - 1) begin
                     plain_text[index] <= data_out_reg[127:0];
                     index =  0;
                     index_2 = 0;
@@ -170,11 +180,11 @@ module top_test_module_verilog (
                 index_2 = index_2 + 1;
                 initial_start <= 0;
                 end
-                else if (index_2 == 16 && index < 1) begin //buradaki deger plain_textin degeri olacak
+                else if (index_2 == 16 && index < BLOCK_NUMBER - 1) begin
                     index = index + 1;
                     index_2 = 0;
                 end
-                else if (index_2 == 16 && index == 1) begin //buradaki deger plain_textin degeri olacak
+                else if (index_2 == 16 && index == BLOCK_NUMBER - 1) begin
                     state <= S_DONE;
                     index =  0;
                     index_2 = 0;
