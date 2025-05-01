@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module top_module_tb(   //bu testbenchi çalıştırmak için top modulde img_mem i [31:0] cipher_text ve plain_texti [1:0] indexlerine ayarlayın
+module top_module_tb(   //bu testbenchi çalıştırmak için top modulde lenght = 8 width = 4 yapın
     );
  reg          clk;
  reg         reset;
