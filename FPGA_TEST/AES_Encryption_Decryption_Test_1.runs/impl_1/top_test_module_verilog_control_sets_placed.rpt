@@ -1,0 +1,206 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri May  2 17:35:08 2025
+| Host         : LAPTOP-HUIHR0D6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_test_module_verilog_control_sets_placed.rpt
+| Design       : top_test_module_verilog
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   128 |
+|    Minimum number of control sets                        |   128 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   128 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |    67 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    52 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           12 |
+| No           | No                    | Yes                    |              20 |           10 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            6368 |         2209 |
+| Yes          | No                    | Yes                    |            1624 |          695 |
+| Yes          | Yes                   | No                     |             322 |           88 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                        Enable Signal                       |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | uart_tx_inst/timerrun_reg_n_0                              |                                            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | done_i_1_n_0                                               | reset_IBUF                                 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/desired_round[3]_i_1__0_n_0              | reset_IBUF                                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/round_cnt[3]_i_1__0_n_0                  | reset_IBUF                                 |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/round_cnt[3]_i_1_n_0                     | reset_IBUF                                 |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/desired_round[3]_i_1_n_0                 | reset_IBUF                                 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/FSM_onehot_state[4]_i_1_n_0     | reset_IBUF                                 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/FSM_onehot_state[4]_i_1_n_0     | reset_IBUF                                 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | uart_tx_inst/shreg[6]_i_1_n_0                              |                                            |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_1[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_11[0]                            |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_2[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_4[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_6[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_2[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_1[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_9[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_8[0]                             |                                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[5]_1[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_1[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_7[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_3[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_1[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2][0]                               |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_7[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_4[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4][0]                               |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_8[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_8[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_2[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_3[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_6[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_4[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_0[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_5[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_6[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_9[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_4[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[5]_0[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_0[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_6[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3]_0[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_5[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[3][0]                               |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_5[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_1[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_2[0]                             |                                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[2]_3[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[4]_2[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_tx_inst/E[0]                                          |                                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_5[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/data_out[7]_i_1_n_0                           |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/data_out_2                                    |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/E[0]                                          |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_4[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_5[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_7[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0][0]                               |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_10[0]                            |                                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_0[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_1[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_2[0]                      |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_3[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_4[0]                      |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_5[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_6[0]                      |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1_7[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_3[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_7[0]                             |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0[0]                        |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_0[0]                      |                                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_6[0]                      |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_8[0]                      |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[0]_0[0]                             |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__0_3[0]                      |                                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | uart_rx_inst/index_reg[1]_rep__1[0]                        |                                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG |                                                            | reset_IBUF                                 |               10 |             20 |         2.00 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/FSM_onehot_state[2]_i_1_n_0     | reset_IBUF                                 |                9 |             23 |         2.56 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/FSM_onehot_state[2]_i_1_n_0     | reset_IBUF                                 |                9 |             23 |         2.56 |
+|  clk_IBUF_BUFG |                                                            |                                            |               12 |             28 |         2.33 |
+|  clk_IBUF_BUFG | uart_rx_inst/bitcounter                                    | uart_rx_inst/bitcounter[31]_i_1_n_0        |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG | uart_tx_inst/timerrun_reg_n_0                              | uart_tx_inst/timercount[31]_i_1_n_0        |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG | uart_rx_inst/timer_run_reg_n_0                             | uart_rx_inst/timer[0]_i_1_n_0              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG | uart_tx_inst/bitcounter                                    | uart_tx_inst/bitcounter[31]_i_1__0_n_0     |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/sbox_in0[7]_i_1_n_0             |                                            |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/sbox_in0[7]_i_1_n_0             |                                            |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG | uart_tx_inst/FSM_sequential_state_reg[0]_2                 | uart_tx_inst/FSM_sequential_state_reg[0]_1 |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | uart_tx_inst/FSM_sequential_state_reg[2]                   | reset_IBUF                                 |               11 |             35 |         3.18 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[1][127]_i_1__0_n_0   |                                            |               49 |            128 |         2.61 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[10][127]_i_1__0_n_0  |                                            |               34 |            128 |         3.76 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[9][127]_i_1__0_n_0   |                                            |               37 |            128 |         3.46 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[2][127]_i_1__0_n_0   |                                            |               49 |            128 |         2.61 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[6][127]_i_1__0_n_0   |                                            |               46 |            128 |         2.78 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[3][127]_i_1__0_n_0   |                                            |               49 |            128 |         2.61 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[4][127]_i_1__0_n_0   |                                            |               39 |            128 |         3.28 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[7][127]_i_1__0_n_0   |                                            |               45 |            128 |         2.84 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[5][127]_i_1__0_n_0   |                                            |               43 |            128 |         2.98 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[8][127]_i_1__0_n_0   |                                            |               36 |            128 |         3.56 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/data_out_reg[127]_i_1__0_n_0             | reset_IBUF                                 |               56 |            128 |         2.29 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/last_state_reg_rep[7]_i_1__0_n_0         | reset_IBUF                                 |              105 |            128 |         1.22 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/data_out_reg[127]_i_1_n_0                | reset_IBUF                                 |               42 |            128 |         3.05 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/FSM_onehot_state_reg_n_0_[4]    | reset_IBUF                                 |               53 |            128 |         2.42 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/last_state_reg_rep[7]_i_1_n_0            | reset_IBUF                                 |              111 |            128 |         1.15 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/FSM_onehot_state_reg_n_0_[4]    | reset_IBUF                                 |               51 |            128 |         2.51 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[0][127]_P_i_1_n_0    |                                            |               60 |            128 |         2.13 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[1][127]_i_1_n_0      |                                            |               35 |            128 |         3.66 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[10][127]_i_1_n_0     |                                            |               28 |            128 |         4.57 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[2][127]_i_1_n_0      |                                            |               40 |            128 |         3.20 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[3][127]_i_1_n_0      |                                            |               38 |            128 |         3.37 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[4][127]_i_1_n_0      |                                            |               36 |            128 |         3.56 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[5][127]_i_1_n_0      |                                            |               33 |            128 |         3.88 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[6][127]_i_1_n_0      |                                            |               34 |            128 |         3.76 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[9][127]_i_1_n_0      |                                            |               31 |            128 |         4.13 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[8][127]_i_1_n_0      |                                            |               31 |            128 |         4.13 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/round_keys[7][127]_i_1_n_0      |                                            |               36 |            128 |         3.56 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/w[3][31]_P_i_1_n_0              |                                            |              112 |            128 |         1.14 |
+|  clk_IBUF_BUFG | encrypt_inst/p_0_in                                        |                                            |               32 |            128 |         4.00 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/w[3][31]_P_i_1__0_n_0           |                                            |              100 |            128 |         1.28 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/round_keys[0][127]_P_i_1__0_n_0 |                                            |               54 |            128 |         2.37 |
+|  clk_IBUF_BUFG | data_in[127]_i_1_n_0                                       | reset_IBUF                                 |               36 |            128 |         3.56 |
+|  clk_IBUF_BUFG | plain_text1_out                                            |                                            |               37 |            128 |         3.46 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/state_reg[127]_i_1__0_n_0                | reset_IBUF                                 |               61 |            136 |         2.23 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/state_reg[127]_i_1_n_0                   | reset_IBUF                                 |               52 |            136 |         2.62 |
+|  clk_IBUF_BUFG | decrypt_inst/Core/E[0]                                     | reset_IBUF                                 |               82 |            256 |         3.12 |
+|  clk_IBUF_BUFG | encrypt_inst/Core/E[0]                                     | reset_IBUF                                 |               53 |            256 |         4.83 |
+|  clk_IBUF_BUFG | plain_text_reg_r1_0_3_0_5_i_1_n_0                          |                                            |               43 |            344 |         8.00 |
+|  clk_IBUF_BUFG | encrypt_inst/key_expansion/w[7][31]_i_1_n_0                |                                            |              463 |           1280 |         2.76 |
+|  clk_IBUF_BUFG | decrypt_inst/key_expansion/w[7][31]_i_1_n_0                |                                            |              454 |           1280 |         2.82 |
++----------------+------------------------------------------------------------+--------------------------------------------+------------------+----------------+--------------+
+
+
