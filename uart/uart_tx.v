@@ -3,11 +3,10 @@
 
 module uart_tx #(
     parameter CLOCK_FREQ = 100_000_000,
-              BAUD_RATE = 115_200,
-              BIT_COUNT = 8
+              BAUD_RATE = 115_200
 )(
     input       clk,
-    input [BIT_COUNT-1:0] din_i,
+    input [7:0] din_i,
     input       tx_start_i,
     output reg  tx_o,
     output reg  tx_done_tick_o
@@ -25,7 +24,7 @@ module uart_tx #(
     integer timercount = 0;
     reg timertick,timerrun;
     reg [1:0] state;
-    reg [BIT_COUNT-1:0] shreg;
+    reg [7:0] shreg;
     integer bitcounter;
 
 
@@ -55,7 +54,7 @@ module uart_tx #(
 
         S_DATA: begin
             tx_o <= shreg[0];
-            if(bitcounter == BIT_COUNT ) begin
+            if(bitcounter == 8 ) begin
                 tx_o <= 1;
                 state <= S_STOP;
                 timerrun <= 1;
@@ -97,6 +96,3 @@ end
 
 
     
-    
-
-endmodule
