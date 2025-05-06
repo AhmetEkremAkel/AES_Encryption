@@ -17,8 +17,7 @@ module uart_rx_tb;
 
     uart_rx #(
         .CLK_FREQ       (CLK_FREQ),
-        .BAUDRATE       (BAUDRATE),
-        .DATA_BIT_LENGTH(8)
+        .BAUDRATE       (BAUDRATE)
     ) dut (
         .clk          (clk),
         .data_rx      (data_rx),
