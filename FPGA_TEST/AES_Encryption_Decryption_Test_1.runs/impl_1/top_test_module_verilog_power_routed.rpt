@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Fri May  2 17:36:36 2025
+| Date             : Tue May  6 22:37:24 2025
 | Host             : LAPTOP-HUIHR0D6 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_test_module_verilog_power_routed.rpt -pb top_test_module_verilog_power_summary_routed.pb -rpx top_test_module_verilog_power_routed.rpx
 | Design           : top_test_module_verilog
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.164        |
+| Total On-Chip Power (W)  | 0.129        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.066        |
+| Dynamic (W)              | 0.031        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.3         |
-| Junction Temperature (C) | 25.7         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |        3 |       --- |             --- |
-| Slice Logic              |     0.026 |    24461 |       --- |             --- |
-|   LUT as Logic           |     0.024 |    11129 |     63400 |           17.55 |
-|   F7/F8 Muxes            |    <0.001 |     2200 |     63400 |            3.47 |
-|   Register               |    <0.001 |     8362 |    126800 |            6.59 |
-|   LUT as Distributed RAM |    <0.001 |      300 |     19000 |            1.58 |
-|   CARRY4                 |    <0.001 |      127 |     15850 |            0.80 |
-|   Others                 |     0.000 |       17 |       --- |             --- |
-| Signals                  |     0.030 |    16525 |       --- |             --- |
+| Clocks                   |     0.006 |        3 |       --- |             --- |
+| Slice Logic              |     0.012 |    11973 |       --- |             --- |
+|   LUT as Logic           |     0.011 |     5498 |     63400 |            8.67 |
+|   F7/F8 Muxes            |    <0.001 |     1134 |     63400 |            1.79 |
+|   Register               |    <0.001 |     4577 |    126800 |            3.61 |
+|   CARRY4                 |    <0.001 |       95 |     15850 |            0.60 |
+|   LUT as Distributed RAM |    <0.001 |      128 |     19000 |            0.67 |
+|   Others                 |     0.000 |       15 |       --- |             --- |
+| Signals                  |     0.014 |     8449 |       --- |             --- |
 | I/O                      |    <0.001 |        5 |       210 |            2.38 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.164 |          |           |                 |
+| Total                    |     0.129 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.082 |       0.066 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.046 |       0.031 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,13 +142,10 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| top_test_module_verilog |     0.066 |
-|   decrypt_inst          |     0.032 |
-|     Core                |     0.010 |
-|     key_expansion       |     0.019 |
-|   encrypt_inst          |     0.031 |
-|     Core                |     0.009 |
-|     key_expansion       |     0.019 |
+| top_test_module_verilog |     0.031 |
+|   encrypt_inst          |     0.029 |
+|     Core                |     0.011 |
+|     key_expansion       |     0.018 |
 +-------------------------+-----------+
 
 

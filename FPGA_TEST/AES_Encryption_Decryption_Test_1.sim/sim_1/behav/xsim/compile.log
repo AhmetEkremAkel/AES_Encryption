@@ -19,17 +19,14 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_D
 INFO: [VRFC 10-311] analyzing module top_encryption
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_test_module_verilog
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'done' is not allowed [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:69]
-WARNING: [VRFC 10-2938] 'start_encryption' is already implicitly declared on line 17 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:70]
-WARNING: [VRFC 10-2938] 'start_decryption' is already implicitly declared on line 28 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:71]
-WARNING: [VRFC 10-2938] 'data_in' is already implicitly declared on line 18 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:72]
-WARNING: [VRFC 10-2938] 'uart_tx_start' is already implicitly declared on line 53 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:73]
-WARNING: [VRFC 10-2938] 'uart_tx_data' is already implicitly declared on line 52 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:74]
+WARNING: [VRFC 10-2938] 'start_encryption' is already implicitly declared on line 17 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:67]
+WARNING: [VRFC 10-2938] 'start_decryption' is already implicitly declared on line 28 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:68]
+WARNING: [VRFC 10-2938] 'data_in' is already implicitly declared on line 18 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:69]
+WARNING: [VRFC 10-2938] 'uart_tx_start' is already implicitly declared on line 51 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:70]
+WARNING: [VRFC 10-2938] 'uart_tx_data' is already implicitly declared on line 50 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:71]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module uart_rx
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module uart_tx
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sim_1/new/top_module_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_module_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

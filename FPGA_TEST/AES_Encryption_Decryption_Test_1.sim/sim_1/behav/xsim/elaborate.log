@@ -20,7 +20,7 @@ Compiling module xil_defaultlib.key_expansion
 Compiling module xil_defaultlib.top_encryption
 Compiling module xil_defaultlib.top_decryption
 Compiling module xil_defaultlib.uart_rx(CLK_FREQ=50000000)
-Compiling module xil_defaultlib.uart_tx(CLK_FREQ=50000000)
+Compiling module xil_defaultlib.uart_tx(CLOCK_FREQ=50000000)
 Compiling module xil_defaultlib.top_test_module_verilog
 Compiling module xil_defaultlib.top_module_tb
 Compiling module xil_defaultlib.glbl

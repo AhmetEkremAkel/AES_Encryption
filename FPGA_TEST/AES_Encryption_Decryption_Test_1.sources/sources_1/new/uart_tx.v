@@ -2,12 +2,11 @@
 // 2. DENEME
 
 module uart_tx #(
-    parameter CLK_FREQ = 100_000_000,
-              BAUDRATE = 115_200,
-              DATA_BIT_LENGTH = 8
+    parameter CLOCK_FREQ = 100_000_000,
+              BAUD_RATE = 115_200
 )(
     input       clk,
-    input [DATA_BIT_LENGTH-1:0] din_i,
+    input [7:0] din_i,
     input       tx_start_i,
     output reg  tx_o,
     output reg  tx_done_tick_o
@@ -15,7 +14,7 @@ module uart_tx #(
     );
     
         // state register values
-    localparam bittimer = CLK_FREQ/BAUDRATE;
+    localparam bittimer = CLOCK_FREQ/BAUD_RATE;
     localparam S_IDLE      = 2'd0,
                S_START     = 2'd1,
                S_DATA      = 2'd2,
@@ -25,7 +24,7 @@ module uart_tx #(
     integer timercount = 0;
     reg timertick,timerrun;
     reg [1:0] state;
-    reg [DATA_BIT_LENGTH-1:0] shreg;
+    reg [7:0] shreg;
     integer bitcounter;
 
 
@@ -55,7 +54,7 @@ module uart_tx #(
 
         S_DATA: begin
             tx_o <= shreg[0];
-            if(bitcounter == DATA_BIT_LENGTH ) begin
+            if(bitcounter == 8 ) begin
                 tx_o <= 1;
                 state <= S_STOP;
                 timerrun <= 1;
@@ -95,8 +94,5 @@ module uart_tx #(
 
 end
 
-
-    
-    
 
 endmodule

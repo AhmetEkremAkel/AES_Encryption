@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="8.801000001 ms"></ZoomEndTime>
-      <Cursor1Time time="0.000000000 ms"></Cursor1Time>
+      <ZoomStartTime time="7,846.690000 us"></ZoomStartTime>
+      <ZoomEndTime time="8,896.690001 us"></ZoomEndTime>
+      <Cursor1Time time="8,145.690000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="205"></NameColumnWidth>
-      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/top_module_tb/dut/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -103,17 +103,84 @@
       <obj_property name="ObjectShortName">uart_tx_done</obj_property>
    </wvobject>
    <wvobject fp_name="/top_module_tb/dut/img_mem" type="array">
-      <obj_property name="ElementShortName">img_mem[31:0][7:0]</obj_property>
-      <obj_property name="ObjectShortName">img_mem[31:0][7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/top_module_tb/dut/cipher_text" type="array">
-      <obj_property name="ElementShortName">cipher_text[1:0][127:0]</obj_property>
-      <obj_property name="ObjectShortName">cipher_text[1:0][127:0]</obj_property>
+      <obj_property name="ElementShortName">img_mem[63:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">img_mem[63:0][7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/top_module_tb/dut/cipher_text" type="array">
+      <obj_property name="ElementShortName">cipher_text[3:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">cipher_text[3:0][127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/cipher_text[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="/top_module_tb/dut/plain_text" type="array">
-      <obj_property name="ElementShortName">plain_text[1:0][127:0]</obj_property>
-      <obj_property name="ObjectShortName">plain_text[1:0][127:0]</obj_property>
+      <obj_property name="ElementShortName">plain_text[3:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">plain_text[3:0][127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/top_module_tb/dut/plain_text[3]" type="array">
+         <obj_property name="ElementShortName">[3][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/plain_text[2]" type="array">
+         <obj_property name="ElementShortName">[2][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/plain_text[1]" type="array">
+         <obj_property name="ElementShortName">[1][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_module_tb/dut/plain_text[0]" type="array">
+         <obj_property name="ElementShortName">[0][127:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/dut/uart_tx_inst/timertick" type="logic">
+      <obj_property name="ElementShortName">timertick</obj_property>
+      <obj_property name="ObjectShortName">timertick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module_tb/dut/uart_tx_inst/din_i" type="array">
+      <obj_property name="ElementShortName">din_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_i[7:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

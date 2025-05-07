@@ -35,8 +35,7 @@ module top_test_module_verilog #(
 
     uart_rx #(
     .CLK_FREQ(50_000_000),
-    .BAUDRATE(115_200), 
-    .DATA_BIT_LENGTH(8) 
+    .BAUDRATE(115_200)
     )uart_rx_inst(
         .clk           (clk),
         .data_rx       (rx),
@@ -44,9 +43,8 @@ module top_test_module_verilog #(
         .data_out_done (uart_rx_done)
     );
     uart_tx #(
-    .CLK_FREQ(50_000_000),
-    .BAUDRATE(115_200), 
-    .DATA_BIT_LENGTH(8) 
+    .CLOCK_FREQ(50_000_000),
+    .BAUD_RATE(115_200)
     ) uart_tx_inst (
         .clk            (clk),
         .din_i          (uart_tx_data),
@@ -66,7 +64,6 @@ module top_test_module_verilog #(
     integer index_2;
     integer initial_start;
 
-    reg done = 0;
     reg start_encryption = 0;
     reg start_decryption = 0;
     reg [127:0]data_in = 0;
@@ -153,10 +150,12 @@ module top_test_module_verilog #(
                     index_2 = 0;
                 end
                 else if (index_2 == 16 && index == BLOCK_NUMBER - 1) begin
-                    state <= S_TX_DONE;
+                    
                     index <=  0;
                     index_2 <= 0;
                     start_decryption <= 1;
+                    
+                    state <= S_IDLE;    //BURADA DEGÝSÝKLÝLK YAPTIM
                 end
             end
             S_TX_DONE : begin   //BU STATEDE DECRYPTION YAPILIYOR
