@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Tue May  6 22:32:39 2025
-# Process ID: 12664
+# Start of session at: Mon May 12 00:55:51 2025
+# Process ID: 9108
 # Current directory: C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1
 # Command line: vivado.exe -log top_test_module_verilog.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_test_module_verilog.tcl
 # Log file: C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.vds
@@ -12,7 +12,7 @@
 # Running On: LAPTOP-HUIHR0D6, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 25095 MB
 #-----------------------------------------------------------
 source top_test_module_verilog.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 474.559 ; gain = 180.109
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 472.781 ; gain = 179.648
 Command: read_checkpoint -auto_incremental -incremental {C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_module.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,28 +25,28 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3704
+INFO: [Synth 8-7075] Helper process launched with PID 16896
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1325.875 ; gain = 440.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.859 ; gain = 440.812
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:31]
-INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:35]
-INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:31]
-INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:35]
-INFO: [Synth 8-11241] undeclared symbol 'start_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:17]
-INFO: [Synth 8-11241] undeclared symbol 'data_in', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:18]
-INFO: [Synth 8-11241] undeclared symbol 'done_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:22]
-INFO: [Synth 8-11241] undeclared symbol 'start_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:28]
-INFO: [Synth 8-11241] undeclared symbol 'done_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:33]
-INFO: [Synth 8-11241] undeclared symbol 'uart_rx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:43]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_data', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:50]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_start', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:51]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:53]
-WARNING: [Synth 8-8895] 'start_encryption' is already implicitly declared on line 17 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:67]
-WARNING: [Synth 8-8895] 'start_decryption' is already implicitly declared on line 28 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:68]
-WARNING: [Synth 8-8895] 'data_in' is already implicitly declared on line 18 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:69]
-WARNING: [Synth 8-8895] 'uart_tx_start' is already implicitly declared on line 51 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:70]
-WARNING: [Synth 8-8895] 'uart_tx_data' is already implicitly declared on line 50 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'start_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:19]
+INFO: [Synth 8-11241] undeclared symbol 'data_in', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:20]
+INFO: [Synth 8-11241] undeclared symbol 'done_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:24]
+INFO: [Synth 8-11241] undeclared symbol 'start_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'done_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'uart_rx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_data', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:54]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_start', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:55]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:57]
+WARNING: [Synth 8-8895] 'start_encryption' is already implicitly declared on line 19 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:73]
+WARNING: [Synth 8-8895] 'start_decryption' is already implicitly declared on line 30 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:74]
+WARNING: [Synth 8-8895] 'data_in' is already implicitly declared on line 20 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:75]
+WARNING: [Synth 8-8895] 'uart_tx_start' is already implicitly declared on line 55 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:76]
+WARNING: [Synth 8-8895] 'uart_tx_data' is already implicitly declared on line 54 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:77]
 INFO: [Synth 8-6157] synthesizing module 'top_test_module_verilog' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:3]
 INFO: [Synth 8-6157] synthesizing module 'top_encryption' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:4]
 INFO: [Synth 8-6157] synthesizing module 'AES_Core' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/AES_Core.v:3]
@@ -67,19 +67,21 @@ INFO: [Synth 8-6155] done synthesizing module 'AES_Core' (0#1) [C:/Vivado Projec
 INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:3]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:71]
 INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'top_encryption' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:4]
 INFO: [Synth 8-6157] synthesizing module 'top_decryption' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:57]
 INFO: [Synth 8-6155] done synthesizing module 'top_decryption' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:4]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx.v:5]
-	Parameter CLK_FREQ bound to: 50000000 - type: integer 
-	Parameter BAUDRATE bound to: 115200 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx.v:5]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx.v:4]
-	Parameter CLOCK_FREQ bound to: 50000000 - type: integer 
-	Parameter BAUD_RATE bound to: 115200 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx.v:4]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:102]
+INFO: [Synth 8-638] synthesizing module 'uart_rx_mba' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx_mba.vhd:18]
+	Parameter c_clkfreq bound to: 50000000 - type: integer 
+	Parameter c_baudrate bound to: 57600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx_mba' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx_mba.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'uart_tx_mba' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx_mba.vhd:21]
+	Parameter c_clkfreq bound to: 50000000 - type: integer 
+	Parameter c_baudrate bound to: 57600 - type: integer 
+	Parameter c_stopbit bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx_mba' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx_mba.vhd:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:113]
 INFO: [Synth 8-6155] done synthesizing module 'top_test_module_verilog' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:3]
 WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:102]
 WARNING: [Synth 8-6014] Unused sequential element subword_reg was removed.  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:117]
@@ -149,55 +151,84 @@ Reason is one or more of the following :
 	3: No valid read/write found for RAM. 
 RAM "img_mem_reg" dissolved into registers
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.152 ; gain = 582.594
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.152 ; gain = 582.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1468.152 ; gain = 582.594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 1468.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1469.398 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_56'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_57'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_58'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_59'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_60'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_61'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:260]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_62'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_63'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_36'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_test_module_verilog_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_test_module_verilog_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1524.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1573.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1524.363 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1573.531 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.363 ; gain = 638.805
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.363 ; gain = 638.805
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1524.363 ; gain = 638.805
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_Core'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_expansion'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_encryption'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_decryption'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_mba'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx_mba'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_test_module_verilog'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -222,31 +253,50 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  S_IDLE |                               00 |                               00
-                 S_START |                               01 |                               01
-                  S_DATA |                               10 |                               10
-                  S_STOP |                               11 |                               11
+                    IDLE |                              001 |                               00
+                     RUN |                              010 |                               01
+                    STOP |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  S_IDLE |                               00 |                               00
-                 S_START |                               01 |                               01
-                  S_DATA |                               10 |                               10
-                  S_STOP |                               11 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_encryption'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  S_IDLE |                              001 |                              000
-               S_RX_DONE |                              010 |                              001
-              S_TX_START |                              100 |                              010
+                    IDLE |                              001 |                               00
+                     RUN |                              010 |                               01
+                    STOP |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_test_module_verilog'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_decryption'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx_mba'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                               00 |                               00
+                 s_start |                               01 |                               01
+                  s_data |                               10 |                               10
+                  s_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx_mba'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+               S_RX_DONE |                              001 |                              001
+              S_TX_START |                              010 |                              010
+               S_TX_DONE |                              011 |                              011
+               S_TX_LAST |                              100 |                              100
+                  S_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_test_module_verilog'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1524.363 ; gain = 638.805
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1573.531 ; gain = 687.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -254,8 +304,11 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input  128 Bit       Adders := 2     
-	   2 Input   32 Bit       Adders := 5     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 2     
 +---XORs : 
 	   2 Input    128 Bit         XORs := 8     
 	   2 Input     32 Bit         XORs := 8     
@@ -264,36 +317,43 @@ Detailed RTL Component Info :
 	   5 Input      8 Bit         XORs := 16    
 +---Registers : 
 	              128 Bit    Registers := 36    
-	               32 Bit    Registers := 94    
+	               32 Bit    Registers := 91    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 	                8 Bit    Registers := 76    
 	                4 Bit    Registers := 7     
-	                1 Bit    Registers := 19    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
 +---RAMs : 
 	              512 Bit	(4 X 128 bit)          RAMs := 2     
 +---Muxes : 
 	   5 Input  128 Bit        Muxes := 4     
-	   2 Input  128 Bit        Muxes := 22    
-	   2 Input   32 Bit        Muxes := 132   
+	   2 Input  128 Bit        Muxes := 14    
+	   3 Input  128 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 130   
 	   5 Input   32 Bit        Muxes := 8     
-	   4 Input   32 Bit        Muxes := 2     
-	   3 Input   32 Bit        Muxes := 3     
+	   6 Input   32 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 2     
+	   4 Input   11 Bit        Muxes := 1     
 	  11 Input    8 Bit        Muxes := 2     
-	   4 Input    8 Bit        Muxes := 2     
-	   3 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
 	   5 Input    5 Bit        Muxes := 2     
 	   2 Input    5 Bit        Muxes := 4     
 	   5 Input    4 Bit        Muxes := 4     
 	   2 Input    4 Bit        Muxes := 3     
 	   5 Input    3 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 2     
-	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 131   
-	   5 Input    1 Bit        Muxes := 42    
-	   3 Input    1 Bit        Muxes := 10    
-	   4 Input    1 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 113   
+	   5 Input    1 Bit        Muxes := 44    
+	   3 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 17    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -310,110 +370,110 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-6014] Unused sequential element plain_text_reg was removed. 
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_LDC) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_C) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_P) is unused and will be removed from module key_expansion__1.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][30]_LDC) is unused and will be removed from module key_expansion__1.
+WARNING: [Synth 8-3936] Found unconnected internal register 'index_3_reg' and it is trimmed from '32' to '6' bits. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:118]
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][30]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][30]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][29]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][29]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][28]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][28]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][27]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][27]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][26]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][26]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][25]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][25]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][24]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][24]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][23]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][23]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][22]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][22]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][21]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][21]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][20]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][20]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][19]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][19]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][18]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][18]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][17]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][17]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][16]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][16]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][15]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][15]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][14]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (w_reg[2][14]_C) is unused and will be removed from module key_expansion.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1594.609 ; gain = 709.051
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1594.344 ; gain = 708.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -500,6 +560,7 @@ Distributed RAM: Preliminary Mapping Report (see note below)
 |Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives      | 
 +------------------------+-----------------+-----------+----------------------+-----------------+
 |top_test_module_verilog | cipher_text_reg | Implied   | 4 x 128              | RAM16X1S x 128  | 
+|top_test_module_verilog | plain_text_reg  | Implied   | 4 x 128              | RAM32M x 44     | 
 +------------------------+-----------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -510,13 +571,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 1594.609 ; gain = 709.051
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1594.344 ; gain = 708.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -527,6 +588,7 @@ Distributed RAM: Final Mapping Report
 |Module Name             | RTL Object      | Inference | Size (Depth x Width) | Primitives      | 
 +------------------------+-----------------+-----------+----------------------+-----------------+
 |top_test_module_verilog | cipher_text_reg | Implied   | 4 x 128              | RAM16X1S x 128  | 
+|top_test_module_verilog | plain_text_reg  | Implied   | 4 x 128              | RAM32M x 44     | 
 +------------------------+-----------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
@@ -536,7 +598,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:52 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -554,37 +616,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:54 ; elapsed = 00:01:59 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:54 ; elapsed = 00:01:59 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -601,45 +663,50 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |    95|
-|3     |LUT1     |     3|
-|4     |LUT2     |   396|
-|5     |LUT3     |   748|
-|6     |LUT4     |   453|
-|7     |LUT5     |   313|
-|8     |LUT6     |  4112|
-|9     |MUXF7    |   797|
-|10    |MUXF8    |   337|
+|2     |CARRY4   |    88|
+|3     |LUT1     |   338|
+|4     |LUT2     |   612|
+|5     |LUT3     |  3302|
+|6     |LUT4     |   550|
+|7     |LUT5     |   671|
+|8     |LUT6     |  8237|
+|9     |MUXF7    |  1588|
+|10    |MUXF8    |   702|
 |11    |RAM16X1S |   128|
-|12    |FDCE     |   836|
-|13    |FDPE     |     2|
-|14    |FDRE     |  3739|
-|15    |IBUF     |     3|
-|16    |OBUF     |     2|
+|12    |RAM32M   |    42|
+|13    |RAM32X1D |     4|
+|14    |FDCE     |  1646|
+|15    |FDPE     |     7|
+|16    |FDRE     |  6617|
+|17    |IBUF     |     9|
+|18    |OBUF     |    10|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1282 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:42 ; elapsed = 00:01:56 . Memory (MB): peak = 1699.715 ; gain = 757.945
-Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 1699.715 ; gain = 814.156
+Synthesis finished with 0 errors, 0 critical warnings and 514 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:01:57 . Memory (MB): peak = 1716.969 ; gain = 726.789
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1699.715 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1357 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1716.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2552 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1699.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1716.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 128 instances were transformed.
+  A total of 174 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 128 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 42 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: 3bbf6580
+Synth Design complete | Checksum: de28808e
 INFO: [Common 17-83] Releasing license: Synthesis
-75 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 178 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 1699.715 ; gain = 1221.207
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1699.715 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 1716.969 ; gain = 1240.211
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1716.969 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_test_module_verilog_utilization_synth.rpt -pb top_test_module_verilog_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue May  6 22:34:59 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 00:58:14 2025...

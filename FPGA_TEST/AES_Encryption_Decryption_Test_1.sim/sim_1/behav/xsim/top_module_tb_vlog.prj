@@ -10,8 +10,6 @@ verilog xil_defaultlib  \
 "../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v" \
 "../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v" \
 "../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v" \
-"../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx.v" \
-"../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx.v" \
 "../../../../AES_Encryption_Decryption_Test_1.srcs/sim_1/new/top_module_tb.v" \
 
 # compile glbl module
