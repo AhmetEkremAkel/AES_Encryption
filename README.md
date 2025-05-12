@@ -24,6 +24,9 @@ AES CTR mode :
 
 ![image](https://github.com/user-attachments/assets/99d2f7f6-4bed-48cc-8218-faa92ef41a99)
 
+![image](https://github.com/user-attachments/assets/bbef6362-42b2-4340-9074-82b64b4adfb9)
+
+
 ## FPGA test results :
 ![image](https://github.com/user-attachments/assets/e9e7181c-4196-464e-8dbb-0775b3bed0a1)
 
