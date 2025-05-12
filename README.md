@@ -24,6 +24,10 @@ AES CTR mode :
 
 ![image](https://github.com/user-attachments/assets/99d2f7f6-4bed-48cc-8218-faa92ef41a99)
 
+## FPGA test results :
+![image](https://github.com/user-attachments/assets/e9e7181c-4196-464e-8dbb-0775b3bed0a1)
+
+
 
 Explanation about the top module:
 
