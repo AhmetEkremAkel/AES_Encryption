@@ -36,8 +36,8 @@ module top_test_module_verilog #(
     );
 
     uart_rx_mba #(
-    .c_clkfreq(50_000_000),
-    .c_baudrate(57_600)
+        .c_clkfreq(100_000_000),
+        .c_baudrate(115_200)
     )uart_rx_inst(
         .clk            (clk),
         .rx_i           (rx),
@@ -46,8 +46,8 @@ module top_test_module_verilog #(
     );
 
     uart_tx_mba #(
-        .c_clkfreq(50_000_000),
-        .c_baudrate(57_600),
+        .c_clkfreq(100_000_000),
+        .c_baudrate(115_200),
         .c_stopbit(1)
     ) uart_tx_inst (
         .clk            (clk),
