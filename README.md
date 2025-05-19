@@ -19,14 +19,23 @@ The input image is divided into 8×8 pixel blocks, serialized via UART, encrypte
 ## 📂 Directory Structure
 
 |FPGA_TEST
+
 ├── src/                 # Verilog source files
+
 │   ├── aes_core/        # AES encryption-decryption modules
+
 │   ├── key_expansion/   # Key expansion FSM
+
 │   ├── uart/            # UART transmitter/receiver
+
 │   └── top/             # Top-level integration module
+
 ├── sim/                 # Testbenches and simulation scripts
+
 ├── img_processing/      # MATLAB scripts for image padding and block parsing
+
 ├── reports/             # Technical reports and documentation
+
 └── README.md
 
 ## 🔐 AES Algorithm Summary
