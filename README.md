@@ -23,7 +23,7 @@ AES CTR mode :
 ![image](https://github.com/user-attachments/assets/99d2f7f6-4bed-48cc-8218-faa92ef41a99)
 
 
-## FPGA test results :
+## FPGA test results if 1 bit changes in key:
 
 ![image](https://github.com/user-attachments/assets/2037f4ee-1897-40f7-a0cd-49eb8ca85ef8)
 
