@@ -1,12 +1,13 @@
-Chiper text, done sinyali geldiği zamanki data_in ile encrption blockun çıkışındaki sinyalin XOR'lanmasından ibarettir (ve bu sonucun data_out registerine yazılmasından). Bu yüzden canlı şifreleme yapılırken (Yani hem encryption blockun çıktıları hesaplanıp hemde plain text verilirken) iki done sinyali arasında şifrelenmek istenen plain text verilmelidir.
+The ciphertext is simply the result of XOR'ing the data_in value at the moment the done signal is asserted with the output of the encryption block. This XOR result is then written into the data_out register.
+
+Therefore, during live encryption (i.e., when both the encryption block is computing outputs and plaintext is being fed), the plaintext to be encrypted must be provided between two rising edges of the done signal.
 
 ![image](https://github.com/user-attachments/assets/6d8132b6-9705-43ed-a55e-2812d7e6c1c9)
 
-Simulasyon için bir top modul yazdım.
-Bu modulde direkt olarak encryptin outputunu decrypte bagladım.
-Decryptin veriyi biraz geç alması için start bitini start_2 yaptım ve 10 cycle sonra başlattım.
+To simulate this behavior, I wrote a top-level module where the output of the encryption block is directly connected to the input of the decryption block. To delay the decryption process slightly, I triggered the decryption's start signal using a separate start_2 signal, which activates 10 clock cycles after the encryption starts.
 
 ![image](https://github.com/user-attachments/assets/a9ea7f25-0a93-4055-b6e5-1693bacb5498)
 
-Chiper text online toollardaki ile aynı çıktı.
-Decryption verisi Plain text ile aynı çıkaran Encryption ve Decrypiton modüllerinin doğru çalıştığı kanıtlanmış oldu.
+The ciphertext output matched the result from online AES-CTR tools.
+The decrypted output was exactly the same as the original plaintext.
+This confirms that both the encryption and decryption modules function correctly.
