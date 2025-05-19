@@ -28,7 +28,7 @@ AES CTR mode :
 
 ![image](https://github.com/user-attachments/assets/4ea01131-2368-47de-ae3b-4214ed7a56a4)
 
-![image](https://github.com/user-attachments/assets/384e9c9b-e665-4395-b27d-1d20e8239534)
+![image](https://github.com/user-attachments/assets/b8c2cd1e-48a9-4f80-820d-79d9f767b756)
 
 
 Explanation about the top module:
