@@ -12,15 +12,13 @@ Supervisor: Berke Akgül (Research Assistant)
 
 ## 📌 Project Overview
 
-This project aims to realize a real-time, pipelined AES encryption-decryption system tailored for RGB image data. The core AES algorithm is fully implemented in Verilog, including key expansion, and optimized for hardware resource efficiency.
+This project aims to realize a real-time, AES encryption-decryption system tailored for RGB image data. The core AES algorithm is fully implemented in Verilog, including key expansion, and optimized for hardware resource efficiency.
 
 The input image is divided into 8×8 pixel blocks, serialized via UART, encrypted on the FPGA, and transmitted back for decryption and verification.
 
 ## 📂 Directory Structure
 
-graphql
-Kopyala
-Düzenle
+|FPGA_TEST
 ├── src/                 # Verilog source files
 │   ├── aes_core/        # AES encryption-decryption modules
 │   ├── key_expansion/   # Key expansion FSM
@@ -67,28 +65,6 @@ AES Core: Implements round transformations (SubBytes, ShiftRows, etc.)
 Key Expansion: FSM-controlled round key generation
 
 Control FSM: Manages pipeline and data flow across AES and UART modules
-
-## 🛠️ Key Expansion Optimization
-
-As documented in :
-
-Initial Issues
-Timing failure at 100 MHz (WNS violation)
-
-Excessive usage of LUTs and Flip-Flops
-
-Inefficient parallelism in S-Box access (4 separate instances)
-
-Optimization Steps
-Replaced parallel S-Boxes with sequential access FSM
-
-XOR operations distributed across multiple states instead of one
-
-Reduced LUT count by 2466 and FF count by 1068
-
-Achieved stable operation at 100 MHz
-
-Key generation latency increased to 1425 ns (acceptable, one-time cost)
 
 ## 🧩 UART-based Image Encryption Flow
 
@@ -149,6 +125,5 @@ NIST FIPS-197 (AES standard)
 
 NIST SP 800-22 (Randomness tests)
 
-Chaotic S-Box literature [as cited in presentation]
+Chaotic S-Box literature
 
-Project Report
