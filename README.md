@@ -1,27 +1,104 @@
-# FPGA Üzerinde Test yapmak için :
+🔐 AES Image Encryption & Decryption on FPGA (Verilog)
+This repository presents a hardware-based implementation of AES-128 encryption and decryption for colored images using FPGA. The design is written in Verilog and tested on a Xilinx Nexys A7-100T development board via UART interface.
 
-1-FPGA-test
+👨‍💻 Contributors
+Ahmet Ekrem Akel
 
-# AES CTR
+Ahmet Taha Aydın
 
-AES CTR mode :
+Supervisor: Berke Akgül (Research Assistant)
+
+📌 Project Overview
+This project aims to realize a real-time, pipelined AES encryption-decryption system tailored for RGB image data. The core AES algorithm is fully implemented in Verilog, including key expansion, and optimized for hardware resource efficiency.
+
+The input image is divided into 8×8 pixel blocks, serialized via UART, encrypted on the FPGA, and transmitted back for decryption and verification.
+
+📂 Directory Structure
+graphql
+Kopyala
+Düzenle
+├── src/                 # Verilog source files
+│   ├── aes_core/        # AES encryption-decryption modules
+│   ├── key_expansion/   # Key expansion FSM
+│   ├── uart/            # UART transmitter/receiver
+│   └── top/             # Top-level integration module
+├── sim/                 # Testbenches and simulation scripts
+├── img_processing/      # MATLAB scripts for image padding and block parsing
+├── reports/             # Technical reports and documentation
+└── README.md
+🔐 AES Algorithm Summary
+AES (Advanced Encryption Standard), originally named Rijndael, is a symmetric block cipher standardized by NIST in 2001. In AES-128:
+
+Operates on 128-bit data blocks
+
+Utilizes 128-bit symmetric keys
+
+Performs 10 transformation rounds:
+
+SubBytes
+
+ShiftRows
+
+MixColumns (except final round)
+
+AddRoundKey
+
+Key expansion generates 11 round keys (1 initial + 10 rounds)
+
+AES counter mode : 
 
 ![image](https://github.com/user-attachments/assets/a7db61e7-ce55-4e43-b55c-fa805b7206f3)
 
 
-## **Complete Block Diagram**
+⚙️ FPGA Architecture
+The project consists of modular and synchronous hardware blocks:
+
+UART Interface: For image data transmission between PC and FPGA
+
+AES Core: Implements round transformations (SubBytes, ShiftRows, etc.)
+
+Key Expansion: FSM-controlled round key generation
+
+Control FSM: Manages pipeline and data flow across AES and UART modules
+
+🛠️ Key Expansion Optimization
+As documented in :
+
+Initial Issues
+Timing failure at 100 MHz (WNS violation)
+
+Excessive usage of LUTs and Flip-Flops
+
+Inefficient parallelism in S-Box access (4 separate instances)
+
+Optimization Steps
+Replaced parallel S-Boxes with sequential access FSM
+
+XOR operations distributed across multiple states instead of one
+
+Reduced LUT count by 2466 and FF count by 1068
+
+Achieved stable operation at 100 MHz
+
+Key generation latency increased to 1425 ns (acceptable, one-time cost)
+
+🧩 UART-based Image Encryption Flow
+RGB image is loaded and zero-padded in MATLAB
+
+Image is partitioned into 8×8 blocks
+
+Blocks are sent sequentially via UART to the FPGA
+
+FPGA encrypts each block using AES-128
+
+Encrypted data is returned via UART for reconstruction or decryption
+
+Complete Block Diagram
 
 ![AES block diagram](https://github.com/user-attachments/assets/c80f2f60-3015-4204-9837-a4b1c92769f7)
 
-## **Module hierarchy**
 
-![image](https://github.com/user-attachments/assets/fe720734-9d2e-42d1-a736-81758567135d)
-
-
-## Top module test bench results :
-
-![image](https://github.com/user-attachments/assets/99d2f7f6-4bed-48cc-8218-faa92ef41a99)
-
+🧪 Test Results & Analysis
 
 ## FPGA test results if 1 bit changes in key:
 
@@ -31,9 +108,36 @@ AES CTR mode :
 
 ![image](https://github.com/user-attachments/assets/b8c2cd1e-48a9-4f80-820d-79d9f767b756)
 
+Image Quality Metrics
+SSIM (Structural Similarity Index)
 
-Explanation about the top module:
+NPCR (Number of Pixels Change Rate)
 
-After the done signal arrives, whatever is in the data in the rising edge of the clk signal is regulated. After that, even if the data in changes, the data out after the process will be the regulated data.
+UACI (Unified Average Changing Intensity)
 
+Cryptographic Evaluation
+NIST SP 800-22 randomness tests
 
+SAC (Strict Avalanche Criterion)
+
+BIC (Bit Independence Criterion)
+
+Linear and Differential Cryptanalysis Resistance
+
+⚡ Why FPGA?
+Low Latency, Real-Time Processing: Deterministic throughput per clock cycle
+
+Hardware-Level Key Security: Secrets stay isolated from system software
+
+Power Efficiency: Custom hardware reduces unnecessary switching
+
+Reconfigurability: Design can be modified and retargeted easily
+
+📎 References
+NIST FIPS-197 (AES standard)
+
+NIST SP 800-22 (Randomness tests)
+
+Chaotic S-Box literature [as cited in presentation]
+
+Project Report
