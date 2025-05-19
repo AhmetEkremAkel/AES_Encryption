@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_rx_mba.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_rx_mba'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_tx_mba.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_tx_mba'

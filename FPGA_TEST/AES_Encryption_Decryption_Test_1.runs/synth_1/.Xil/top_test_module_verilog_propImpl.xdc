@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc} rfile:../../../AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc} rfile:../../../AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

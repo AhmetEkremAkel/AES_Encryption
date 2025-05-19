@@ -1,20 +1,29 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon May 12 00:55:51 2025
-# Process ID: 9108
-# Current directory: C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1
-# Command line: vivado.exe -log top_test_module_verilog.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_test_module_verilog.tcl
-# Log file: C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.vds
-# Journal file: C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1\vivado.jou
-# Running On: LAPTOP-HUIHR0D6, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 12, Host memory: 25095 MB
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May 19 13:57:22 2025
+# Process ID         : 19040
+# Current directory  : D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.runs/synth_1
+# Command line       : vivado.exe -log top_test_module_verilog.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_test_module_verilog.tcl
+# Log file           : D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.vds
+# Journal file       : D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.runs/synth_1\vivado.jou
+# Running On         : Taha
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1240P
+# CPU Frequency      : 2112 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16890 MB
+# Swap memory        : 6906 MB
+# Total Virtual      : 23797 MB
+# Available Virtual  : 3397 MB
 #-----------------------------------------------------------
 source top_test_module_verilog.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 472.781 ; gain = 179.648
-Command: read_checkpoint -auto_incremental -incremental {C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_module.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_test_module_verilog.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.srcs/utils_1/imports/synth_1/top_test_module_verilog.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_test_module_verilog -part xc7a100tcsg324-1
 Starting synth_design
@@ -25,125 +34,91 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16896
+INFO: [Synth 8-7075] Helper process launched with PID 15592
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.859 ; gain = 440.812
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1026.145 ; gain = 469.918
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:32]
-INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:36]
-INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:32]
-INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:36]
-INFO: [Synth 8-11241] undeclared symbol 'start_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:19]
-INFO: [Synth 8-11241] undeclared symbol 'data_in', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:20]
-INFO: [Synth 8-11241] undeclared symbol 'done_encryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:24]
-INFO: [Synth 8-11241] undeclared symbol 'start_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:30]
-INFO: [Synth 8-11241] undeclared symbol 'done_decryption', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:35]
-INFO: [Synth 8-11241] undeclared symbol 'uart_rx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:45]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_data', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:54]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_start', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:55]
-INFO: [Synth 8-11241] undeclared symbol 'uart_tx_done', assumed default net type 'wire' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:57]
-WARNING: [Synth 8-8895] 'start_encryption' is already implicitly declared on line 19 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:73]
-WARNING: [Synth 8-8895] 'start_decryption' is already implicitly declared on line 30 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:74]
-WARNING: [Synth 8-8895] 'data_in' is already implicitly declared on line 20 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:75]
-WARNING: [Synth 8-8895] 'uart_tx_start' is already implicitly declared on line 55 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:76]
-WARNING: [Synth 8-8895] 'uart_tx_data' is already implicitly declared on line 54 [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:77]
-INFO: [Synth 8-6157] synthesizing module 'top_test_module_verilog' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:3]
-INFO: [Synth 8-6157] synthesizing module 'top_encryption' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:4]
-INFO: [Synth 8-6157] synthesizing module 'AES_Core' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/AES_Core.v:3]
-INFO: [Synth 8-6157] synthesizing module 'subbytes' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/subbytes.v:22]
-INFO: [Synth 8-6157] synthesizing module 'sbox_module' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/sbox.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'sbox_module' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/sbox.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'subbytes' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/subbytes.v:22]
-INFO: [Synth 8-6157] synthesizing module 'shiftrows' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/ShiftRows.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'shiftrows' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/ShiftRows.v:27]
-INFO: [Synth 8-6157] synthesizing module 'mixcolumns' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/MixColumns.v:22]
-INFO: [Synth 8-6157] synthesizing module 'mix_single_column' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/MixColumns.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'mix_single_column' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/MixColumns.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'mixcolumns' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/MixColumns.v:22]
-INFO: [Synth 8-6157] synthesizing module 'addroundkey' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/AddRoundKey.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'addroundkey' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Users/USER/Downloads/AddRoundKey.v:22]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/AES_Core.v:78]
-INFO: [Synth 8-6155] done synthesizing module 'AES_Core' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/AES_Core.v:3]
-INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'top_encryption' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/top_encryption.v:4]
-INFO: [Synth 8-6157] synthesizing module 'top_decryption' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:4]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'top_decryption' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_decryption.v:4]
-INFO: [Synth 8-638] synthesizing module 'uart_rx_mba' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx_mba.vhd:18]
-	Parameter c_clkfreq bound to: 50000000 - type: integer 
-	Parameter c_baudrate bound to: 57600 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_rx_mba' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx_mba.vhd:18]
-INFO: [Synth 8-638] synthesizing module 'uart_tx_mba' [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx_mba.vhd:21]
-	Parameter c_clkfreq bound to: 50000000 - type: integer 
-	Parameter c_baudrate bound to: 57600 - type: integer 
+INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_decryption.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_decryption.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'key_expansion_done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_encryption.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_encryption.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'start_encryption', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:19]
+INFO: [Synth 8-11241] undeclared symbol 'data_in', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:20]
+INFO: [Synth 8-11241] undeclared symbol 'done_encryption', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:24]
+INFO: [Synth 8-11241] undeclared symbol 'start_decryption', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'done_decryption', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'uart_rx_done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_data', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:54]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_start', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:55]
+INFO: [Synth 8-11241] undeclared symbol 'uart_tx_done', assumed default net type 'wire' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:57]
+WARNING: [Synth 8-8895] 'start_encryption' is already implicitly declared on line 19 [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:73]
+WARNING: [Synth 8-8895] 'start_decryption' is already implicitly declared on line 30 [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:74]
+WARNING: [Synth 8-8895] 'data_in' is already implicitly declared on line 20 [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:75]
+WARNING: [Synth 8-8895] 'uart_tx_start' is already implicitly declared on line 55 [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:76]
+WARNING: [Synth 8-8895] 'uart_tx_data' is already implicitly declared on line 54 [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:77]
+INFO: [Synth 8-6157] synthesizing module 'top_test_module_verilog' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:3]
+INFO: [Synth 8-6157] synthesizing module 'top_encryption' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_encryption.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AES_Core' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/AES_Core.v:3]
+INFO: [Synth 8-6157] synthesizing module 'subbytes' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/subbytes.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sbox_module' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/sbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sbox_module' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/sbox.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/subbytes.v:22]
+INFO: [Synth 8-6157] synthesizing module 'shiftrows' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/ShiftRows.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrows' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/ShiftRows.v:27]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumns' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/MixColumns.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mix_single_column' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/MixColumns.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'mix_single_column' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/MixColumns.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumns' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/MixColumns.v:22]
+INFO: [Synth 8-6157] synthesizing module 'addroundkey' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/AddRoundKey.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'addroundkey' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/AddRoundKey.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/AES_Core.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Core' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/AES_Core.v:3]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_encryption.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'top_encryption' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_encryption.v:4]
+INFO: [Synth 8-6157] synthesizing module 'top_decryption' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_decryption.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_decryption.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'top_decryption' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_decryption.v:4]
+INFO: [Synth 8-638] synthesizing module 'uart_rx_mba' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_rx_mba.vhd:18]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx_mba' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_rx_mba.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'uart_tx_mba' [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_tx_mba.vhd:21]
+	Parameter c_clkfreq bound to: 100000000 - type: integer 
+	Parameter c_baudrate bound to: 115200 - type: integer 
 	Parameter c_stopbit bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'uart_tx_mba' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx_mba.vhd:21]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:113]
-INFO: [Synth 8-6155] done synthesizing module 'top_test_module_verilog' (0#1) [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:3]
-WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:102]
-WARNING: [Synth 8-6014] Unused sequential element subword_reg was removed.  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:117]
-WARNING: [Synth 8-7137] Register w_reg[0] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[1] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[2] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[3] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[4] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[5] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[6] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[7] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[8] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[9] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[10] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[11] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[12] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[13] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[14] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[15] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[16] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[17] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[18] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[19] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[20] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[21] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[22] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[23] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[24] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[25] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[26] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[27] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[28] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[29] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[30] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[31] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[32] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[33] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[34] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[35] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[36] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[37] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[38] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[39] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[40] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[41] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[42] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register w_reg[43] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:87]
-WARNING: [Synth 8-7137] Register round_keys_reg[0] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[1] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[2] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[3] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[4] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[5] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[6] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[7] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[8] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[9] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register round_keys_reg[10] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:93]
-WARNING: [Synth 8-7137] Register sbox_in0_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:39]
-WARNING: [Synth 8-7137] Register sbox_in1_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:40]
-WARNING: [Synth 8-7137] Register sbox_in2_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:41]
-WARNING: [Synth 8-7137] Register sbox_in3_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/imports/Vivado Projects/AES_Image_Encryp_Decryp_Project/AES_Image_Encryp_Decryp_Project.srcs/sources_1/new/key_expansion.v:42]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx_mba' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/uart_tx_mba.vhd:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'top_test_module_verilog' (0#1) [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:3]
+WARNING: [Synth 8-7137] Register w_reg[0] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[1] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[2] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[3] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[4] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[5] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[6] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register w_reg[7] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:69]
+WARNING: [Synth 8-7137] Register round_keys_reg[0] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[1] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[2] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[3] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[4] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[5] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[6] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[7] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[8] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[9] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register round_keys_reg[10] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:75]
+WARNING: [Synth 8-7137] Register temp_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:76]
+WARNING: [Synth 8-7137] Register index_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:80]
+WARNING: [Synth 8-7137] Register index_2_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:81]
+WARNING: [Synth 8-7137] Register sbox_reg_reg[0] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:86]
+WARNING: [Synth 8-7137] Register sbox_reg_reg[1] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:86]
+WARNING: [Synth 8-7137] Register sbox_reg_reg[2] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:86]
+WARNING: [Synth 8-7137] Register sbox_reg_reg[3] in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:86]
+WARNING: [Synth 8-7137] Register sbox_in0_reg in module key_expansion has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/key_expansion.v:27]
 WARNING: [Synth 8-4767] Trying to implement RAM 'img_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has too many ports (16). Maximum supported = 16. 
@@ -151,80 +126,79 @@ Reason is one or more of the following :
 	3: No valid read/write found for RAM. 
 RAM "img_mem_reg" dissolved into registers
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1156.102 ; gain = 599.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1156.102 ; gain = 599.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.398 ; gain = 583.352
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1156.102 ; gain = 599.875
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1469.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1156.102 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_56'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:255]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:255]
+Parsing XDC File [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_56'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:255]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_57'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:256]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:256]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_57'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:256]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_58'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:257]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:257]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_58'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:257]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_59'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:258]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:258]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_59'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:258]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_60'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:259]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:259]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_60'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:259]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_61'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:260]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:260]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_61'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:260]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:260]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_62'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:261]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:261]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_62'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:261]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_63'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:262]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:262]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_63'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:262]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_36'. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:264]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc:264]
+WARNING: [Vivado 12-507] No nets matched 'uart_rx_inst_n_36'. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc:264]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_test_module_verilog_propImpl.xdc].
+Finished Parsing XDC File [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/constrs_1/new/xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_test_module_verilog_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_test_module_verilog_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1573.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1245.859 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1573.531 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1245.859 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.859 ; gain = 689.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.859 ; gain = 689.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1573.531 ; gain = 687.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1245.859 ; gain = 689.633
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'AES_Core'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_expansion'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_encryption'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_decryption'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx_mba'
@@ -240,16 +214,6 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_t
               DONE_STATE |                              100 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'AES_Core'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                            00001 |                              000
-                    LOAD |                            00010 |                              001
-                    CALC |                            00100 |                              010
-               WAIT_SBOX |                            01000 |                              011
-              DONE_STATE |                            10000 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'key_expansion'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -296,7 +260,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_test_module_verilog'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1573.531 ; gain = 687.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1245.859 ; gain = 689.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -304,44 +268,44 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input  128 Bit       Adders := 2     
-	   2 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 6     
 	   2 Input   11 Bit       Adders := 1     
 	   2 Input   10 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 4     
 	   2 Input    3 Bit       Adders := 2     
 +---XORs : 
 	   2 Input    128 Bit         XORs := 8     
-	   2 Input     32 Bit         XORs := 8     
-	   2 Input      8 Bit         XORs := 42    
+	   2 Input     32 Bit         XORs := 10    
+	   2 Input      8 Bit         XORs := 40    
 	   4 Input      8 Bit         XORs := 16    
 	   5 Input      8 Bit         XORs := 16    
 +---Registers : 
 	              128 Bit    Registers := 36    
-	               32 Bit    Registers := 91    
+	               32 Bit    Registers := 25    
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 76    
-	                4 Bit    Registers := 7     
+	                8 Bit    Registers := 78    
+	                4 Bit    Registers := 9     
 	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 13    
 +---RAMs : 
 	              512 Bit	(4 X 128 bit)          RAMs := 2     
 +---Muxes : 
-	   5 Input  128 Bit        Muxes := 4     
-	   2 Input  128 Bit        Muxes := 14    
+	   5 Input  128 Bit        Muxes := 2     
+	   2 Input  128 Bit        Muxes := 38    
+	  12 Input  128 Bit        Muxes := 2     
 	   3 Input  128 Bit        Muxes := 4     
-	   2 Input   32 Bit        Muxes := 130   
-	   5 Input   32 Bit        Muxes := 8     
+	  12 Input   32 Bit        Muxes := 12    
+	   2 Input   32 Bit        Muxes := 10    
 	   6 Input   32 Bit        Muxes := 3     
-	   2 Input   11 Bit        Muxes := 2     
 	   4 Input   11 Bit        Muxes := 1     
 	  11 Input    8 Bit        Muxes := 2     
-	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 3     
 	   6 Input    8 Bit        Muxes := 1     
-	   5 Input    5 Bit        Muxes := 2     
-	   2 Input    5 Bit        Muxes := 4     
-	   5 Input    4 Bit        Muxes := 4     
-	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 2     
+	  12 Input    4 Bit        Muxes := 2     
 	   5 Input    3 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 4     
 	   3 Input    3 Bit        Muxes := 2     
@@ -349,8 +313,9 @@ Detailed RTL Component Info :
 	   6 Input    3 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 113   
-	   5 Input    1 Bit        Muxes := 44    
+	   2 Input    1 Bit        Muxes := 89    
+	   5 Input    1 Bit        Muxes := 12    
+	  12 Input    1 Bit        Muxes := 36    
 	   3 Input    1 Bit        Muxes := 8     
 	   4 Input    1 Bit        Muxes := 8     
 	   6 Input    1 Bit        Muxes := 17    
@@ -370,110 +335,110 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'index_3_reg' and it is trimmed from '32' to '6' bits. [C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.srcs/sources_1/new/top_test_module_verilog.v:118]
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][31]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][30]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][29]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][28]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][27]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][26]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][25]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][24]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][23]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][22]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][21]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][20]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][19]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][18]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][17]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][16]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][15]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][14]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][13]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][12]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][11]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][10]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][9]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][8]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][7]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][6]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][5]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][4]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][3]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][2]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][1]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[3][0]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][31]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][30]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][30]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][29]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][29]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][28]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][28]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][27]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][27]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][26]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][26]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][25]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][25]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][24]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][24]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][23]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][23]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][22]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][22]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][21]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][21]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][20]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][20]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][19]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][19]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][18]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][18]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][17]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][17]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][16]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][16]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][15]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][15]_C) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][14]_LDC) is unused and will be removed from module key_expansion.
-WARNING: [Synth 8-3332] Sequential element (w_reg[2][14]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3936] Found unconnected internal register 'index_3_reg' and it is trimmed from '32' to '6' bits. [D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.src/sources/top_test_module_verilog.v:118]
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][0]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][0]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][1]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][1]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][2]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][2]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][3]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][3]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][4]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][4]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][5]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][5]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][6]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][6]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][7]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][7]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][8]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][8]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][9]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][9]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][10]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][10]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][11]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][11]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][12]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][12]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][13]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][13]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][14]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][14]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][15]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][15]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][16]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][16]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][17]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][17]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][18]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][18]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][19]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][19]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][20]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][20]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][21]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][21]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][22]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][22]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][23]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][23]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][24]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][24]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][25]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][25]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][26]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][26]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][27]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][27]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][28]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][28]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][29]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][29]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][30]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][30]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][31]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][31]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][32]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][32]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][33]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][33]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][34]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][34]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][35]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][35]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][36]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][36]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][37]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][37]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][38]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][38]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][39]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][39]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][40]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][40]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][41]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][41]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][42]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][42]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][43]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][43]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][44]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][44]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][45]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][45]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][46]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][46]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][47]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][47]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][48]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][48]_C) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][49]_LDC) is unused and will be removed from module key_expansion.
+WARNING: [Synth 8-3332] Sequential element (round_keys_reg[0][49]_C) is unused and will be removed from module key_expansion.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:30 . Memory (MB): peak = 1594.344 ; gain = 708.297
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1459.211 ; gain = 902.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -484,74 +449,72 @@ ROM: Preliminary Mapping Report
 |Module Name   | RTL Object | Depth x Width | Implemented As | 
 +--------------+------------+---------------+----------------+
 |sbox_module   | sbox_lut   | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
 |key_expansion | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
+|AES_Core      | p_0_out    | 256x8         | LUT            | 
 |key_expansion | p_0_out    | 256x8         | LUT            | 
-|key_expansion | p_0_out    | 256x8         | LUT            | 
-|key_expansion | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
-|AES_Core      | p_0_out    | 256x8         | LUT            | 
 +--------------+------------+---------------+----------------+
 
 
@@ -571,13 +534,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:36 . Memory (MB): peak = 1594.344 ; gain = 708.297
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:01:11 . Memory (MB): peak = 1459.211 ; gain = 902.984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:14 . Memory (MB): peak = 1504.098 ; gain = 947.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -598,7 +561,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:47 ; elapsed = 00:01:50 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 1504.098 ; gain = 947.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -616,37 +579,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:55 ; elapsed = 00:01:58 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:01:22 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:00 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -663,50 +626,51 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     1|
-|2     |CARRY4   |    88|
-|3     |LUT1     |   338|
-|4     |LUT2     |   612|
-|5     |LUT3     |  3302|
-|6     |LUT4     |   550|
-|7     |LUT5     |   671|
-|8     |LUT6     |  8237|
-|9     |MUXF7    |  1588|
-|10    |MUXF8    |   702|
+|2     |CARRY4   |   128|
+|3     |LUT1     |     6|
+|4     |LUT2     |   817|
+|5     |LUT3     |   716|
+|6     |LUT4     |   374|
+|7     |LUT5     |   385|
+|8     |LUT6     |  6453|
+|9     |MUXF7    |  1152|
+|10    |MUXF8    |   568|
 |11    |RAM16X1S |   128|
 |12    |RAM32M   |    42|
 |13    |RAM32X1D |     4|
-|14    |FDCE     |  1646|
-|15    |FDPE     |     7|
-|16    |FDRE     |  6617|
-|17    |IBUF     |     9|
-|18    |OBUF     |    10|
+|14    |FDCE     |  1607|
+|15    |FDPE     |     4|
+|16    |FDRE     |  4438|
+|17    |FDSE     |    83|
+|18    |IBUF     |     9|
+|19    |OBUF     |    10|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:01:23 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 514 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:01:57 . Memory (MB): peak = 1716.969 ; gain = 726.789
-Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:02 . Memory (MB): peak = 1716.969 ; gain = 830.922
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:01:21 . Memory (MB): peak = 1624.426 ; gain = 978.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 1624.426 ; gain = 1068.199
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1716.969 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2552 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1634.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2022 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1716.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1638.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 174 instances were transformed.
   RAM16X1S => RAM32X1S (RAMS32): 128 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 42 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: de28808e
+Synth Design complete | Checksum: ccd5be1a
 INFO: [Common 17-83] Releasing license: Synthesis
-80 Infos, 178 Warnings, 9 Critical Warnings and 0 Errors encountered.
+78 Infos, 144 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 1716.969 ; gain = 1240.211
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:30 . Memory (MB): peak = 1638.418 ; gain = 1287.379
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1716.969 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Vivado Projects/AES_Encryption_Decryption_Test_1/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file top_test_module_verilog_utilization_synth.rpt -pb top_test_module_verilog_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 12 00:58:14 2025...
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1638.418 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado documents/AES_CTR_Encryption_Decryption/FPGA_TEST/AES_Encryption_Decryption_Test_1.runs/synth_1/top_test_module_verilog.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_test_module_verilog_utilization_synth.rpt -pb top_test_module_verilog_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 19 13:58:59 2025...

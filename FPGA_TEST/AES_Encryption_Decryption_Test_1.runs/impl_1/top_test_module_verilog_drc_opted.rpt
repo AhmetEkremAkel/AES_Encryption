@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Mon May 12 00:58:57 2025
-| Host         : LAPTOP-HUIHR0D6 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon May 19 13:59:29 2025
+| Host         : Taha running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_test_module_verilog_drc_opted.rpt -pb top_test_module_verilog_drc_opted.pb -rpx top_test_module_verilog_drc_opted.rpx
 | Design       : top_test_module_verilog
 | Device       : xc7a100tcsg324-1
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
-             Max violations: <unlimited>
-             Violations found: 1
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-+----------+----------+-----------------------------------------------------+------------+
+             Max checks: <unlimited>
+             Checks found: 1
++----------+----------+-----------------------------------------------------+--------+
+| Rule     | Severity | Description                                         | Checks |
++----------+----------+-----------------------------------------------------+--------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
++----------+----------+-----------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------

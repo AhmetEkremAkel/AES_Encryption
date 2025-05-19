@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_rx_mba.vhd" \
-"../../../../AES_Encryption_Decryption_Test_1.srcs/sources_1/new/uart_tx_mba.vhd" \
+"../../../../AES_Encryption_Decryption_Test_1.src/sources/uart_rx_mba.vhd" \
+"../../../../AES_Encryption_Decryption_Test_1.src/sources/uart_tx_mba.vhd" \
 
 # Do not sort compile order
 nosort

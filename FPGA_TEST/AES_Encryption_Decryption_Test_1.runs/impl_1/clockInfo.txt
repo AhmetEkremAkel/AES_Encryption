@@ -1,7 +1,7 @@
 -------------------------------------
-| Tool Version : Vivado v.2023.2
-| Date         : Mon May 12 00:59:06 2025
-| Host         : LAPTOP-HUIHR0D6
+| Tool Version : Vivado v.2024.2
+| Date         : Mon May 19 13:59:34 2025
+| Host         : Taha
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--
 -------------------------------------

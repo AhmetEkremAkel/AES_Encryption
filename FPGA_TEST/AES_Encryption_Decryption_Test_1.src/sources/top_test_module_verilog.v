@@ -29,7 +29,7 @@ module top_test_module_verilog #(
         .reset (reset),
         .start (start_decryption),
         .data_in  (connection_2[127:0]),
-        .key_in   (128'h0001_0203_0405_0607_0809_0A0B_0C0D_0E0F),
+        .key_in   (128'h0000_0203_0405_0607_0809_0A0B_0C0D_0E0F),
         .nonce    (128'h0000_0000_1111_1111_0000_0000_0000_0000),
         .data_out (data_out_reg[127:0]),
         .done_2     (done_decryption)

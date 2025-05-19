@@ -1,8 +1,8 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon May 12 01:01:07 2025
-| Host             : LAPTOP-HUIHR0D6 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date             : Mon May 19 14:00:46 2025
+| Host             : Taha running 64-bit major release  (build 9200)
 | Command          : report_power -file top_test_module_verilog_power_routed.rpt -pb top_test_module_verilog_power_summary_routed.pb -rpx top_test_module_verilog_power_routed.rpx
 | Design           : top_test_module_verilog
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.160        |
+| Total On-Chip Power (W)  | 0.162        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.063        |
+| Dynamic (W)              | 0.064        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.3         |
@@ -52,18 +52,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |        3 |       --- |             --- |
-| Slice Logic              |     0.023 |    24511 |       --- |             --- |
-|   LUT as Logic           |     0.022 |    11363 |     63400 |           17.92 |
-|   F7/F8 Muxes            |    <0.001 |     2290 |     63400 |            3.61 |
+| Clocks                   |     0.014 |        3 |       --- |             --- |
+| Slice Logic              |     0.023 |    17220 |       --- |             --- |
+|   LUT as Logic           |     0.021 |     8192 |     63400 |           12.92 |
+|   F7/F8 Muxes            |    <0.001 |     1720 |     63400 |            2.71 |
 |   LUT as Distributed RAM |    <0.001 |      300 |     19000 |            1.58 |
-|   Register               |    <0.001 |     8270 |    126800 |            6.52 |
-|   CARRY4                 |    <0.001 |       88 |     15850 |            0.56 |
+|   Register               |    <0.001 |     6132 |    126800 |            4.84 |
+|   CARRY4                 |    <0.001 |      128 |     15850 |            0.81 |
 |   Others                 |     0.000 |       17 |       --- |             --- |
-| Signals                  |     0.028 |    16411 |       --- |             --- |
-| I/O                      |     0.002 |       19 |       210 |            9.05 |
+| Signals                  |     0.024 |     9182 |       --- |             --- |
+| I/O                      |     0.004 |       19 |       210 |            9.05 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.160 |          |           |                 |
+| Total                    |     0.162 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -129,7 +129,7 @@ Table of Contents
 +-------------+--------+-----------------+
 | Clock       | Domain | Constraint (ns) |
 +-------------+--------+-----------------+
-| sys_clk_pin | clk    |            20.0 |
+| sys_clk_pin | clk    |            10.0 |
 +-------------+--------+-----------------+
 
 
@@ -142,13 +142,13 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| top_test_module_verilog |     0.063 |
-|   decrypt_inst          |     0.029 |
-|     Core                |     0.006 |
-|     key_expansion       |     0.022 |
+| top_test_module_verilog |     0.064 |
+|   decrypt_inst          |     0.026 |
+|     Core                |     0.015 |
+|     key_expansion       |     0.009 |
 |   encrypt_inst          |     0.028 |
-|     Core                |     0.007 |
-|     key_expansion       |     0.019 |
+|     Core                |     0.017 |
+|     key_expansion       |     0.009 |
 +-------------------------+-----------+
 
 
