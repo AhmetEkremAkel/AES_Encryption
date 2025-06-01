@@ -14,7 +14,7 @@ Supervisor: Berke Akgül (Research Assistant)
 
 This project aims to realize a real-time, AES encryption-decryption system tailored for RGB image data. The core AES algorithm is fully implemented in Verilog, including key expansion, and optimized for hardware resource efficiency.
 
-The input image is divided into 8×8 pixel blocks, serialized via UART, encrypted on the FPGA, and transmitted back for decryption and verification.
+The input image is parametric, serialized via UART, encrypted on the FPGA, and transmitted back for decryption and verification.
 
 ## 📂 Directory Structure
 
