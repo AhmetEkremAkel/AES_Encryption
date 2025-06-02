@@ -102,6 +102,10 @@ FPGA test results if 1 bit changes in key:
 
 ![image](https://github.com/user-attachments/assets/b8c2cd1e-48a9-4f80-820d-79d9f767b756)
 
+![WhatsApp Image 2025-05-31 at 20 21 44](https://github.com/user-attachments/assets/f91eb48f-5114-464f-b36e-f242d5dcb550)
+
+![WhatsApp Image 2025-05-31 at 20 22 02](https://github.com/user-attachments/assets/fa413c6a-9e5f-409e-a284-f0f673bfec4a)
+
 Image Quality Metrics
 SSIM (Structural Similarity Index)
 
